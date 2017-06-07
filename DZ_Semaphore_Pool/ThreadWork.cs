@@ -34,10 +34,11 @@ namespace DZ_Semaphore_Pool
 		 
 		void Run()
 			{
+			Status = "чекає";
 			sem.WaitOne();
 			Stop = false;
 			StartTime = DateTime.Now;
-			Status = "чекає";
+			
 			//Id = Thread.CurrentThread.ManagedThreadId;
 			do
 				{

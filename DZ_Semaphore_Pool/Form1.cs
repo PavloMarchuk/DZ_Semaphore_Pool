@@ -48,7 +48,7 @@ namespace DZ_Semaphore_Pool
 				{
 				foreach(var item in Sors2)
 					{
-					if(item.Status != "створено")
+					if(item.Status != "створено" && item.Status != "чекає")
 						{						
 						Sors3.Add(item);
 						Sors2.Remove(item);
